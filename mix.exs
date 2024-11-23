@@ -23,7 +23,7 @@ defmodule Metadata.MixProject do
     [
       {:tesla, "~> 1.3"},
       {:hackney, "~> 1.15.2"},
-      {:floki, "~> 0.26.0"},
+      {:floki, "~> 0.30.0"},
       {:mix_test_watch, "~> 1.0", only: :dev, runtime: false}
     ]
   end
