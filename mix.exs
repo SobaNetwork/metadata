@@ -5,7 +5,7 @@ defmodule Metadata.MixProject do
     [
       app: :metadata,
       version: "0.1.1",
-      elixir: "~> 1.10",
+      elixir: "~> 1.17",
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -21,9 +21,9 @@ defmodule Metadata.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:tesla, "~> 1.3"},
-      {:hackney, "~> 1.15.2"},
-      {:floki, "~> 0.30.0"},
+      {:tesla, "~> 1.9"},
+      {:hackney, "~> 1.20"},
+      {:floki, ">= 0.30.0"},
       {:mix_test_watch, "~> 1.0", only: :dev, runtime: false}
     ]
   end
